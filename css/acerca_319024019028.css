@@ -1,7 +1,3 @@
-/* ============================================================
-   FORCE KARATE — acerca_319024019028.css
-   ============================================================ */
-
 :root {
   --black-319024019028: #0a0a0a;
   --white-319024019028: #f5f5f0;
@@ -14,7 +10,6 @@
 html { scroll-behavior: smooth; }
 body { background: var(--white-319024019028); color: var(--black-319024019028); font-family: var(--font-body-319024019028); overflow-x: hidden; }
 
-/* ── NAV ── */
 .nav-319024019028 {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
@@ -30,7 +25,6 @@ body { background: var(--white-319024019028); color: var(--black-319024019028); 
 .nav-links-319024019028 a:hover, .nav-links-319024019028 a.active-319024019028 { color: var(--white-319024019028); }
 .nav-toggle-319024019028 { display: none; background: none; border: none; color: var(--white-319024019028); font-size: 1.5rem; cursor: pointer; }
 
-/* ── PAGE HERO ── */
 .page-hero-319024019028 { position: relative; height: 60vh; min-height: 380px; display: flex; align-items: flex-end; overflow: hidden; background: var(--black-319024019028); }
 .page-hero-bg-319024019028 { position: absolute; inset: -20%; background: url('https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=1600&q=80') center/cover no-repeat; opacity: 0.18; will-change: transform; }
 .page-hero-content-319024019028 { position: relative; z-index: 2; padding: 0 4rem 4rem; animation: fadeUp-319024019028 0.9s ease both; }
@@ -39,7 +33,6 @@ body { background: var(--white-319024019028); color: var(--black-319024019028); 
 .page-hero-title-319024019028 { font-family: var(--font-display-319024019028); font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 300; line-height: 1; color: var(--white-319024019028); }
 .page-hero-title-319024019028 em { font-style: italic; font-weight: 600; }
 
-/* ── SENSEI ── */
 .sensei-section-319024019028 { padding: 0; background: var(--white-319024019028); }
 .sensei-inner-319024019028 { display: grid; grid-template-columns: 1fr 1fr; min-height: 600px; }
 .sensei-text-319024019028 { padding: 6rem 4rem; display: flex; flex-direction: column; gap: 1.2rem; justify-content: center; }
@@ -56,7 +49,6 @@ body { background: var(--white-319024019028); color: var(--black-319024019028); 
   min-height: 500px;
 }
 
-/* ── CREADOR ── */
 .creador-section-319024019028 { padding: 7rem 4rem; background: var(--black-319024019028); color: var(--white-319024019028); }
 .section-header-319024019028 { max-width: 1000px; margin: 0 auto 3rem; }
 .section-header-319024019028 h2 { font-family: var(--font-display-319024019028); font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: var(--white-319024019028); margin-top: 0.6rem; }
@@ -70,7 +62,6 @@ body { background: var(--white-319024019028); color: var(--black-319024019028); 
 .detail-label-319024019028 { font-size: 0.62rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gray-319024019028); padding-top: 0.1rem; }
 .detail-val-319024019028 { font-size: 0.84rem; color: rgba(245,245,240,0.75); }
 
-/* ── HISTORIA ── */
 .historia-section-319024019028 { position: relative; padding: 7rem 4rem; overflow: hidden; background: var(--black-319024019028); }
 .historia-bg-319024019028 { position: absolute; inset: -20%; background: url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=1600&q=80') center/cover no-repeat; opacity: 0.07; will-change: transform; }
 .historia-content-319024019028 { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; color: var(--white-319024019028); }
@@ -81,7 +72,6 @@ body { background: var(--white-319024019028); color: var(--black-319024019028); 
 .tl-year-319024019028 { display: block; font-family: var(--font-display-319024019028); font-size: 1.5rem; font-weight: 600; color: var(--white-319024019028); margin-bottom: 0.4rem; }
 .tl-desc-319024019028 { font-size: 0.84rem; line-height: 1.8; color: rgba(245,245,240,0.55); }
 
-/* ── FOOTER ── */
 .footer-319024019028 { background: var(--black-319024019028); border-top: 1px solid rgba(255,255,255,0.08); padding: 3rem 4rem; display: flex; flex-direction: column; align-items: center; gap: 1.5rem; color: var(--white-319024019028); }
 .footer-brand-319024019028 { font-family: var(--font-display-319024019028); font-size: 1.1rem; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; }
 .footer-links-319024019028 { display: flex; gap: 2rem; }
@@ -92,7 +82,6 @@ body { background: var(--white-319024019028); color: var(--black-319024019028); 
 .footer-social-319024019028 a:hover { color: var(--white-319024019028); }
 .footer-copy-319024019028 { font-size: 0.65rem; color: rgba(245,245,240,0.25); letter-spacing: 0.1em; }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .nav-319024019028 { padding: 1.2rem 1.5rem; }
   .nav-links-319024019028 { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; background: rgba(10,10,10,0.97); padding: 1.5rem; gap: 1.2rem; border-top: 1px solid rgba(255,255,255,0.08); }

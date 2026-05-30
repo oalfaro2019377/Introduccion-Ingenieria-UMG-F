@@ -8,8 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- NAV -->
   <nav class="nav-319024019028">
     <div class="nav-logo-319024019028">FORCE <span>KARATE</span></div>
     <ul class="nav-links-319024019028">
@@ -20,8 +18,6 @@
     </ul>
     <button class="nav-toggle-319024019028" aria-label="Menú">&#9776;</button>
   </nav>
-
-  <!-- PAGE HERO -->
   <section class="page-hero-319024019028">
     <div class="page-hero-bg-319024019028"></div>
     <div class="page-hero-content-319024019028">
@@ -29,16 +25,11 @@
       <h1 class="page-hero-title-319024019028">Contáctanos<br/><em>hoy.</em></h1>
     </div>
   </section>
-
-  <!-- CONTACTO PRINCIPAL -->
   <section class="contact-main-319024019028">
     <div class="contact-grid-319024019028">
-
-      <!-- INFO -->
       <div class="contact-info-319024019028">
         <span class="section-label-319024019028">01 — Información</span>
         <h2 class="contact-info-title-319024019028">Visítanos o<br/>escríbenos</h2>
-
         <div class="info-block-319024019028">
           <div class="info-item-319024019028">
             <span class="info-icon-319024019028">
@@ -49,7 +40,6 @@
               <p class="info-value-319024019028">12 Calle 4-65, Zona 10<br/>Guatemala City, Guatemala</p>
             </div>
           </div>
-
           <div class="info-item-319024019028">
             <span class="info-icon-319024019028">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -59,7 +49,6 @@
               <p class="info-value-319024019028">+502 2345-6789</p>
             </div>
           </div>
-
           <div class="info-item-319024019028">
             <span class="info-icon-319024019028">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -70,8 +59,6 @@
             </div>
           </div>
         </div>
-
-        <!-- HORARIOS -->
         <div class="horarios-319024019028">
           <span class="section-label-319024019028">02 — Horarios</span>
           <div class="horario-table-319024019028">
@@ -90,8 +77,6 @@
           </div>
         </div>
       </div>
-
-      <!-- FORMULARIO -->
       <div class="contact-form-wrap-319024019028">
         <span class="section-label-319024019028">03 — Mensaje</span>
         <h2 class="form-title-319024019028">Envíanos un<br/>mensaje</h2>
@@ -130,11 +115,8 @@
           <p class="form-confirm-319024019028" id="confirm-319024019028"></p>
         </div>
       </div>
-
     </div>
   </section>
-
-  <!-- MAPA SIMULADO -->
   <section class="mapa-section-319024019028">
     <div class="mapa-overlay-319024019028">
       <div class="mapa-badge-319024019028">
@@ -151,8 +133,6 @@
       title="Ubicación Force Karate">
     </iframe>
   </section>
-
-  <!-- FOOTER -->
   <footer class="footer-319024019028">
     <div class="footer-brand-319024019028">FORCE KARATE</div>
     <div class="footer-links-319024019028">
@@ -177,18 +157,15 @@
     </div>
     <p class="footer-copy-319024019028">&copy; 2026 Force Karate · Guatemala · Todos los derechos reservados</p>
   </footer>
-
   <script>
     const toggle = document.querySelector('.nav-toggle-319024019028');
     const links = document.querySelector('.nav-links-319024019028');
     toggle.addEventListener('click', () => links.classList.toggle('open-319024019028'));
-
     window.addEventListener('scroll', () => {
       const y = window.scrollY;
       const heroBg = document.querySelector('.page-hero-bg-319024019028');
       if (heroBg) heroBg.style.transform = `translateY(${y * 0.35}px)`;
     });
-
     function handleSubmit319024019028() {
       const nombre = document.getElementById('nombre').value.trim();
       const email = document.getElementById('email').value.trim();

@@ -1,8 +1,3 @@
-/* ============================================================
-   FORCE KARATE — index_319024019028.css
-   Paleta: Negro y Blanco puro · Parallax minimalista
-   ============================================================ */
-
 :root {
   --black-319024019028: #0a0a0a;
   --white-319024019028: #f5f5f0;
@@ -24,7 +19,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── NAV ── */
 .nav-319024019028 {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -74,7 +68,6 @@ body {
   cursor: pointer;
 }
 
-/* ── HERO ── */
 .hero-319024019028 {
   position: relative;
   height: 100vh;
@@ -180,7 +173,6 @@ body {
   50% { opacity: 1; }
 }
 
-/* ── MISIÓN / VISIÓN ── */
 .mv-section-319024019028 {
   padding: 8rem 4rem;
   background: var(--white-319024019028);
@@ -225,7 +217,6 @@ body {
   color: #444;
 }
 
-/* ── PARALLAX QUOTE ── */
 .parallax-quote-319024019028 {
   position: relative;
   height: 50vh;
@@ -269,7 +260,6 @@ body {
   font-family: var(--font-body-319024019028);
 }
 
-/* ── SECTION HEADER ── */
 .section-header-319024019028 {
   max-width: 1100px;
   margin: 0 auto 3.5rem;
@@ -289,7 +279,6 @@ body {
   font-weight: 400;
 }
 
-/* ── PROMOCIONES ── */
 .promo-section-319024019028 {
   padding: 8rem 4rem;
   background: var(--black-319024019028);
@@ -337,7 +326,6 @@ body {
   color: rgba(245,245,240,0.55);
 }
 
-/* ── NOVEDADES ── */
 .nuevos-section-319024019028 {
   padding: 8rem 4rem;
   background: var(--white-319024019028);
@@ -376,7 +364,6 @@ body {
   color: #555;
 }
 
-/* ── STATS PARALLAX ── */
 .stats-section-319024019028 {
   position: relative;
   height: 45vh;
@@ -434,7 +421,6 @@ body {
   color: var(--gray-319024019028);
 }
 
-/* ── FOOTER ── */
 .footer-319024019028 {
   background: var(--black-319024019028);
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -487,9 +473,6 @@ body {
   letter-spacing: 0.1em;
 }
 
-/* ══════════════════════════════════════
-   RESPONSIVE — MEDIA QUERY
-   ══════════════════════════════════════ */
 @media (max-width: 768px) {
   .nav-319024019028 { padding: 1.2rem 1.5rem; }
   .nav-links-319024019028 {
