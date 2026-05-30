@@ -13,305 +13,101 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-
-body {
-  background: var(--white-319024019028);
-  color: var(--black-319024019028);
-  font-family: var(--font-body-319024019028);
-  overflow-x: hidden;
-}
+body { background: var(--white-319024019028); color: var(--black-319024019028); font-family: var(--font-body-319024019028); overflow-x: hidden; }
 
 /* ── NAV ── */
 .nav-319024019028 {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
   padding: 1.4rem 4rem;
   background: rgba(10,10,10,0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
-.nav-logo-319024019028 {
-  font-family: var(--font-display-319024019028);
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--white-319024019028);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
+.nav-logo-319024019028 { font-family: var(--font-display-319024019028); font-size: 1.4rem; font-weight: 700; color: var(--white-319024019028); letter-spacing: 0.2em; text-transform: uppercase; }
 .nav-logo-319024019028 span { color: var(--gray-319024019028); }
 .nav-links-319024019028 { list-style: none; display: flex; gap: 2.5rem; }
-.nav-links-319024019028 a {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(245,245,240,0.65);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.nav-links-319024019028 a:hover,
-.nav-links-319024019028 a.active-319024019028 { color: var(--white-319024019028); }
+.nav-links-319024019028 a { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,245,240,0.65); text-decoration: none; transition: color 0.2s; }
+.nav-links-319024019028 a:hover, .nav-links-319024019028 a.active-319024019028 { color: var(--white-319024019028); }
 .nav-toggle-319024019028 { display: none; background: none; border: none; color: var(--white-319024019028); font-size: 1.5rem; cursor: pointer; }
 
 /* ── PAGE HERO ── */
-.page-hero-319024019028 {
-  position: relative;
-  height: 60vh;
-  min-height: 380px;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  background: var(--black-319024019028);
-}
+.page-hero-319024019028 { position: relative; height: 60vh; min-height: 380px; display: flex; align-items: flex-end; overflow: hidden; background: var(--black-319024019028); }
+/* Hero: karate fighter punch technique */
 .page-hero-bg-319024019028 {
-  position: absolute;
-  inset: -20%;
-  background: url('https://images.unsplash.com/photo-1509822929464-a18da15f8f05?w=1600&q=80') center/cover no-repeat;
-  opacity: 0.2;
-  will-change: transform;
+  position: absolute; inset: -20%;
+  background: url('https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=1600&q=80') center/cover no-repeat;
+  opacity: 0.22; will-change: transform;
 }
-.page-hero-content-319024019028 {
-  position: relative;
-  z-index: 2;
-  padding: 0 4rem 4rem;
-  animation: fadeUp-319024019028 0.9s ease both;
-}
-@keyframes fadeUp-319024019028 {
-  from { opacity: 0; transform: translateY(30px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-.page-hero-kicker-319024019028 {
-  display: block;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gray-319024019028);
-  margin-bottom: 0.8rem;
-}
-.page-hero-title-319024019028 {
-  font-family: var(--font-display-319024019028);
-  font-size: clamp(3rem, 7vw, 5.5rem);
-  font-weight: 300;
-  line-height: 1;
-  color: var(--white-319024019028);
-}
+.page-hero-content-319024019028 { position: relative; z-index: 2; padding: 0 4rem 4rem; animation: fadeUp-319024019028 0.9s ease both; }
+@keyframes fadeUp-319024019028 { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+.page-hero-kicker-319024019028 { display: block; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray-319024019028); margin-bottom: 0.8rem; }
+.page-hero-title-319024019028 { font-family: var(--font-display-319024019028); font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 300; line-height: 1; color: var(--white-319024019028); }
 .page-hero-title-319024019028 em { font-style: italic; font-weight: 600; }
 
 /* ── INTRO ── */
-.intro-section-319024019028 {
-  padding: 5rem 4rem;
-  border-bottom: 1px solid var(--light-gray-319024019028);
-}
+.intro-section-319024019028 { padding: 5rem 4rem; border-bottom: 1px solid var(--light-gray-319024019028); }
 .intro-inner-319024019028 { max-width: 700px; margin: 0 auto; }
-.intro-text-319024019028 {
-  font-family: var(--font-display-319024019028);
-  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
-  font-weight: 300;
-  line-height: 1.6;
-  color: #333;
-}
+.intro-text-319024019028 { font-family: var(--font-display-319024019028); font-size: clamp(1.2rem, 2.5vw, 1.7rem); font-weight: 300; line-height: 1.6; color: #333; }
 
 /* ── CATEGORÍAS ── */
 .categorias-section-319024019028 { background: var(--white-319024019028); }
 .categorias-inner-319024019028 { max-width: 1300px; margin: 0 auto; }
 
-.cat-block-319024019028 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 520px;
-  border-bottom: 1px solid var(--light-gray-319024019028);
-}
+.cat-block-319024019028 { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; border-bottom: 1px solid var(--light-gray-319024019028); }
 .cat-reverse-319024019028 { direction: rtl; }
 .cat-reverse-319024019028 > * { direction: ltr; }
 
-.cat-info-319024019028 {
-  padding: 5rem 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-}
+.cat-info-319024019028 { padding: 5rem 4rem; display: flex; flex-direction: column; justify-content: center; gap: 1rem; }
+.cat-label-319024019028 { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gray-319024019028); }
+.cat-title-319024019028 { font-family: var(--font-display-319024019028); font-size: clamp(2.5rem, 4vw, 3.5rem); font-weight: 400; line-height: 1; }
+.cat-age-319024019028 { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-319024019028); padding-bottom: 1rem; border-bottom: 1px solid var(--light-gray-319024019028); }
+.cat-desc-319024019028 { font-size: 0.86rem; line-height: 1.9; color: #555; }
+.cat-features-319024019028 { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.cat-features-319024019028 li { font-size: 0.78rem; color: #666; padding-left: 1rem; position: relative; }
+.cat-features-319024019028 li::before { content: '—'; position: absolute; left: 0; color: var(--gray-319024019028); }
+.cat-price-319024019028 { display: flex; align-items: baseline; gap: 1rem; margin-top: 0.5rem; padding-top: 1rem; border-top: 1px solid var(--light-gray-319024019028); }
+.price-label-319024019028 { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray-319024019028); }
+.price-amount-319024019028 { font-family: var(--font-display-319024019028); font-size: 2.4rem; font-weight: 600; color: var(--black-319024019028); }
 
-.cat-label-319024019028 {
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--gray-319024019028);
-}
-.cat-title-319024019028 {
-  font-family: var(--font-display-319024019028);
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
-  font-weight: 400;
-  line-height: 1;
-}
-.cat-age-319024019028 {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--gray-319024019028);
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--light-gray-319024019028);
-}
-.cat-desc-319024019028 {
-  font-size: 0.86rem;
-  line-height: 1.9;
-  color: #555;
-}
-.cat-features-319024019028 {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-.cat-features-319024019028 li {
-  font-size: 0.78rem;
-  color: #666;
-  padding-left: 1rem;
-  position: relative;
-}
-.cat-features-319024019028 li::before {
-  content: '—';
-  position: absolute;
-  left: 0;
-  color: var(--gray-319024019028);
-}
-.cat-price-319024019028 {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  margin-top: 0.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--light-gray-319024019028);
-}
-.price-label-319024019028 {
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gray-319024019028);
-}
-.price-amount-319024019028 {
-  font-family: var(--font-display-319024019028);
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: var(--black-319024019028);
-}
+.cat-visual-319024019028 { background-size: cover; background-position: center; filter: grayscale(100%); transition: filter 0.5s; }
+.cat-visual-319024019028:hover { filter: grayscale(40%); }
 
-.cat-visual-319024019028 {
-  background-size: cover;
-  background-position: center;
-  filter: grayscale(100%);
-  transition: filter 0.5s;
+/* Imagen 1 — Karate infantil: niño con uniforme de karate */
+.cat-visual-1-319024019028 {
+  background-image: url('https://images.unsplash.com/photo-1555597408-26bc8e548a46?w=800&q=80');
 }
-.cat-visual-319024019028:hover { filter: grayscale(60%); }
-.cat-visual-1-319024019028 { background-image: url('https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800&q=80'); }
-.cat-visual-2-319024019028 { background-image: url('https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=800&q=80'); }
-.cat-visual-3-319024019028 { background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80'); }
-.cat-visual-4-319024019028 { background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80'); }
+/* Imagen 2 — Karate juvenil: joven practicando kata */
+.cat-visual-2-319024019028 {
+  background-image: url('https://images.unsplash.com/photo-1581009137042-c552e485697a?w=800&q=80');
+}
+/* Imagen 3 — Karate competencia: peleadores en torneo */
+.cat-visual-3-319024019028 {
+  background-image: url('https://images.unsplash.com/photo-1567598508481-65985588e295?w=800&q=80');
+}
+/* Imagen 4 — Karate adulto: cinturón negro entrenando */
+.cat-visual-4-319024019028 {
+  background-image: url('https://images.unsplash.com/photo-1606902965551-dce093cda6e7?w=800&q=80');
+}
 
 /* ── EXTRAS ── */
-.extras-section-319024019028 {
-  padding: 7rem 4rem;
-  background: var(--black-319024019028);
-  color: var(--white-319024019028);
-}
-.extras-header-319024019028 {
-  max-width: 1100px;
-  margin: 0 auto 3.5rem;
-}
-.section-label-319024019028 {
-  display: block;
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--gray-319024019028);
-  margin-bottom: 0.8rem;
-}
-.extras-header-319024019028 h2 {
-  font-family: var(--font-display-319024019028);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 400;
-  color: var(--white-319024019028);
-}
-.extras-grid-319024019028 {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5px;
-  background: rgba(255,255,255,0.1);
-}
-.extra-card-319024019028 {
-  background: var(--black-319024019028);
-  padding: 2.5rem;
-  transition: background 0.3s;
-}
+.extras-section-319024019028 { padding: 7rem 4rem; background: var(--black-319024019028); color: var(--white-319024019028); }
+.extras-header-319024019028 { max-width: 1100px; margin: 0 auto 3.5rem; }
+.section-label-319024019028 { display: block; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gray-319024019028); margin-bottom: 0.8rem; }
+.extras-header-319024019028 h2 { font-family: var(--font-display-319024019028); font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: var(--white-319024019028); }
+.extras-grid-319024019028 { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: rgba(255,255,255,0.1); }
+.extra-card-319024019028 { background: var(--black-319024019028); padding: 2.5rem; transition: background 0.3s; }
 .extra-card-319024019028:hover { background: #111; }
-.extra-num-319024019028 {
-  display: block;
-  font-family: var(--font-display-319024019028);
-  font-size: 2rem;
-  font-weight: 300;
-  color: rgba(245,245,240,0.2);
-  margin-bottom: 1rem;
-}
-.extra-card-319024019028 h3 {
-  font-family: var(--font-display-319024019028);
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--white-319024019028);
-  margin-bottom: 0.8rem;
-}
-.extra-card-319024019028 p {
-  font-size: 0.82rem;
-  line-height: 1.8;
-  color: rgba(245,245,240,0.55);
-}
-.extra-price-319024019028 {
-  margin-top: 1.2rem !important;
-  font-size: 0.75rem !important;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  color: var(--white-319024019028) !important;
-  text-transform: uppercase;
-}
+.extra-num-319024019028 { display: block; font-family: var(--font-display-319024019028); font-size: 2rem; font-weight: 300; color: rgba(245,245,240,0.2); margin-bottom: 1rem; }
+.extra-card-319024019028 h3 { font-family: var(--font-display-319024019028); font-size: 1.5rem; font-weight: 400; color: var(--white-319024019028); margin-bottom: 0.8rem; }
+.extra-card-319024019028 p { font-size: 0.82rem; line-height: 1.8; color: rgba(245,245,240,0.55); }
+.extra-price-319024019028 { margin-top: 1.2rem !important; font-size: 0.75rem !important; font-weight: 600; letter-spacing: 0.1em; color: var(--white-319024019028) !important; text-transform: uppercase; }
 
 /* ── FOOTER ── */
-.footer-319024019028 {
-  background: var(--black-319024019028);
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 3rem 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  color: var(--white-319024019028);
-}
-.footer-brand-319024019028 {
-  font-family: var(--font-display-319024019028);
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-}
+.footer-319024019028 { background: var(--black-319024019028); border-top: 1px solid rgba(255,255,255,0.08); padding: 3rem 4rem; display: flex; flex-direction: column; align-items: center; gap: 1.5rem; color: var(--white-319024019028); }
+.footer-brand-319024019028 { font-family: var(--font-display-319024019028); font-size: 1.1rem; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; }
 .footer-links-319024019028 { display: flex; gap: 2rem; }
-.footer-links-319024019028 a {
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(245,245,240,0.5);
-  text-decoration: none;
-  transition: color 0.2s;
-}
+.footer-links-319024019028 a { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(245,245,240,0.5); text-decoration: none; transition: color 0.2s; }
 .footer-links-319024019028 a:hover { color: var(--white-319024019028); }
 .footer-social-319024019028 { display: flex; gap: 1.4rem; }
 .footer-social-319024019028 a { color: rgba(245,245,240,0.45); transition: color 0.2s; display: flex; align-items: center; }
@@ -321,33 +117,17 @@ body {
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .nav-319024019028 { padding: 1.2rem 1.5rem; }
-  .nav-links-319024019028 {
-    display: none;
-    position: absolute;
-    top: 100%; left: 0; right: 0;
-    flex-direction: column;
-    background: rgba(10,10,10,0.97);
-    padding: 1.5rem;
-    gap: 1.2rem;
-    border-top: 1px solid rgba(255,255,255,0.08);
-  }
+  .nav-links-319024019028 { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; background: rgba(10,10,10,0.97); padding: 1.5rem; gap: 1.2rem; border-top: 1px solid rgba(255,255,255,0.08); }
   .nav-links-319024019028.open-319024019028 { display: flex; }
   .nav-toggle-319024019028 { display: block; }
-
   .page-hero-content-319024019028 { padding: 0 1.5rem 2.5rem; }
   .intro-section-319024019028 { padding: 3.5rem 1.5rem; }
-
-  .cat-block-319024019028 {
-    grid-template-columns: 1fr;
-    direction: ltr;
-  }
+  .cat-block-319024019028 { grid-template-columns: 1fr; direction: ltr; }
   .cat-reverse-319024019028 { direction: ltr; }
   .cat-visual-319024019028 { height: 260px; }
   .cat-info-319024019028 { padding: 3rem 1.5rem; }
-
   .extras-section-319024019028 { padding: 5rem 1.5rem; }
   .extras-grid-319024019028 { grid-template-columns: 1fr; }
-
   .footer-319024019028 { padding: 2.5rem 1.5rem; }
   .footer-links-319024019028 { flex-wrap: wrap; justify-content: center; gap: 1rem; }
 }
