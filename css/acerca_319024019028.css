@@ -54,7 +54,7 @@ body { background: var(--white-319024019028); color: var(--black-319024019028); 
 .section-header-319024019028 h2 { font-family: var(--font-display-319024019028); font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: var(--white-319024019028); margin-top: 0.6rem; }
 .creador-grid-319024019028 { max-width: 1000px; margin: 0 auto; }
 .creador-card-319024019028 { display: grid; grid-template-columns: 200px 1fr; gap: 3rem; align-items: start; background: #111; border: 1px solid rgba(255,255,255,0.06); padding: 3rem; }
-.creador-photo-319024019028 { aspect-ratio: 1; background: #1a1a1a; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.08); }
+.creador-photo-319024019028 { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.08); }
 .creador-initials-319024019028 { font-family: var(--font-display-319024019028); font-size: 4rem; font-weight: 300; color: rgba(245,245,240,0.3); letter-spacing: 0.1em; }
 .creador-name-319024019028 { font-family: var(--font-display-319024019028); font-size: 1.8rem; font-weight: 400; color: var(--white-319024019028); margin-bottom: 1.5rem; }
 .creador-details-319024019028 { display: flex; flex-direction: column; gap: 0.8rem; }
